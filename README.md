@@ -2,10 +2,10 @@
 mxnet-cu
 opencv-python
 ...
-(可使用bbd_cv镜像)
+
 
 ## info
-本项目以金融资质验证码数据为例，展示文本行识别的crnn算法训练。
+本项目以demo验证码数据为例，展示文本行识别的crnn算法训练。
 
 可用于训练文本行识别 ，包括但不限于普通定长、不定长字符验证码,通用ocr文本行。
 项目代码主要包含3个类：
@@ -21,5 +21,5 @@ crnn_infer：加载crnn_trainer，用于部署的推理类
 
 ## 训练
 
-`python Train_crnn.py   -train_root=金融许可train  -test_root=金融许可test  -max_len=4 -model_dir='model_test' -backbone="ResNetV2_small"`
+`python Train_crnn.py   -train_root=Demo_train  -test_root=Demo_test  -max_len=4 -model_dir='model_test' -backbone="ResNetV2_small"`
 
